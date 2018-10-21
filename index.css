@@ -1,0 +1,316 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+/* heading  */
+.heading {
+  font-size: 0px;
+  position: relative;
+  padding: 20px 0;
+  border-bottom: 1px solid #e7e9ee;
+  color: #242424;
+}
+.arrow,
+.settings {
+  width: calc(50% - 100px);
+  display: inline-block;
+  font-size: 28px;
+}
+.fa-arrow-left {
+  margin-left: 10px;
+}
+.fa-arrow-left,
+.fa-cog {
+  cursor: pointer;
+}
+h1 {
+  display: inline-block;
+  font-size: 29px;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+.settings {
+  text-align: right;
+}
+.fa-cog {
+  margin-right: 10px;
+}
+/* heading */
+
+/* navigation */
+.tab {
+  display: inline-block;
+  font-weight: normal;
+  position: relative;
+  bottom: -1px;
+  color: #7f7f7f;
+  padding: 1em 1em;
+  width: calc(100% / 3);
+  margin-right: -4px;
+  cursor: pointer;
+  text-align: center;
+}
+.tab.active {
+  color: blue;
+  border-bottom: 2px solid blue;
+  background-color: #fff;
+}
+
+/* navigation */
+
+/* content */
+.content {
+  padding: 2em 1em;
+  background: linear-gradient(to bottom, #f5f5f5, white);
+}
+/* content */
+
+/* card */
+
+.card {
+  width: 100%;
+  background: rgb(76, 188, 131);
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.top {
+  background: white;
+  border-radius: 15px;
+}
+.bottom {
+  background: rgb(76, 188, 131);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 19px 63px -17px rgb(76, 188, 131);
+}
+.country {
+  text-align: center;
+  padding: 3em 0;
+}
+#currency {
+  display: block;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #c6c2cf;
+  line-height: 24px;
+  padding-bottom: 1.5em;
+}
+#price {
+  display: block;
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #242424;
+  line-height: 44.8px;
+}
+.circle-logo {
+  width: 58px;
+  height: 58px;
+  background: rgb(76, 188, 131);
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  cursor: pointer;
+  right: 16px;
+}
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.percent {
+  display: block;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: white;
+  line-height: 24px;
+  padding: 0.6em;
+}
+.fas {
+  vertical-align: middle;
+}
+
+/* card */
+
+/* 4 slot price */
+
+.prices {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0;
+  margin-top: 30px;
+}
+.box1,
+.box3 {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  border-right: 1px solid #eaedf4;
+}
+.box2,
+.box4 {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  text-align: right;
+}
+
+.row {
+  height: 30px;
+  width: 100%;
+  transform: translateY(50%);
+}
+.horizontal-row {
+  width: 100%;
+  font-size: 0;
+  position: relative;
+}
+.left {
+  width: calc(50% - 15px);
+
+  display: inline-block;
+}
+.middle {
+  width: 30px;
+
+  display: inline-block;
+  position: relative;
+}
+
+.right {
+  width: calc(50% - 15px);
+  display: inline-block;
+}
+.line {
+  border-bottom: 1px solid #eaedf4;
+  height: 0px;
+  background: #c6c2cf;
+  width: 100%;
+}
+.circle {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #eaedf4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 4 slot price */
+
+/* statement */
+
+.statement {
+  padding: 2.6em 0;
+}
+.time p {
+  font-size: 1.3em;
+  color: #c6c2cf;
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+.trade p {
+  font-size: 2em;
+  color: #242424;
+  text-align: center;
+}
+#special-trade {
+  color: rgb(76, 188, 131);
+}
+#special-trade .fa-sort-up {
+  font-size: 0.7em;
+}
+
+/* statement */
+
+/*graph*/
+
+.graph-container {
+  margin: 10px auto;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+/*graph*/
+
+/*Media Quires */
+
+/* heading  */
+
+@media screen and (min-width: 340px) {
+  .fa-arrow-left {
+    margin-left: 18px;
+  }
+  .fa-cog {
+    margin-right: 18px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .fa-arrow-left {
+    margin-left: 21px;
+  }
+  .fa-cog {
+    margin-right: 21px;
+  }
+}
+@media screen and (min-width: 411px) {
+  .fa-arrow-left {
+    margin-left: 27px;
+  }
+  .fa-cog {
+    margin-right: 27px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .fa-arrow-left {
+    margin-left: 41px;
+  }
+  .fa-cog {
+    margin-right: 41px;
+  }
+}
+/* heading  */
+
+/* statement  */
+@media screen and (min-width: 300px) {
+  .statement {
+    padding: 2em 0;
+  }
+  .time p {
+    font-size: 1.1em;
+    padding-bottom: 1em;
+  }
+  .trade p {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 370px) {
+  .statement {
+    padding: 2.6em 0;
+  }
+  .time p {
+    font-size: 1.3em;
+
+    padding-bottom: 0.5em;
+  }
+  .trade p {
+    font-size: 2em;
+  }
+}
+/* statement  */
