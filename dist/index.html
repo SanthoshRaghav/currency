@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="60">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--heading start-->
+        <div class="heading">
+            <div class="arrow"><i class="fas fa-arrow-left"></i></div>
+            <h1>Cryptonator</h1>
+            <div class="settings"><i class="fas fa-cog"></i></div>
+        </div>
+        <!--heading end-->
+
+        <div class="tab tab-usa active" id="america">USD</div>
+        <div class="tab tab-europe" id="europe">EUR</div>
+        <div class="tab tab-dubai" id="dubai">AUD</div>
+
+
+        <div class="content content-usa">
+            <!-- card start-->
+            <div class="card" id="card-data">
+                <div class="top">
+                    <div class="country"><span class="circle-logo"><img class="logo" src="logo.png"></span><span id="currency">1BTC
+                            / <span id="money"></span> &#61;</span><span id="price">&#36;<span id="vwp"></span></span></div>
+                </div>
+                <div class="bottom"><span class="percent"> 2.92 &#x25; <i class="fas fa-sort-up"></i></span></div>
+            </div>
+            <!-- card end-->
+
+            <!-- 4 slot price-->
+            <div class="prices">
+                <div class="box1">
+                    <div class="statement">
+                        <div class="time">
+                            <p>24 Hour High</p>
+                        </div>
+                        <div class="trade">
+                            <p>$460.758</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box2">
+                    <div class="statement">
+                        <div class="time">
+                            <p>24 Hour Low</p>
+                        </div>
+                        <div class="trade">
+                            <p>$460.758</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="horizontal-row">
+                        <div class="left">
+                            <div class="line"></div>
+                        </div>
+                        <div class="middle">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="right">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="statement">
+                        <div class="time">
+                            <p>24 Hour Change</p>
+                        </div>
+                        <div class="trade">
+                            <p id="special-trade">$<span id="increase"></span> <i class="fas fa-sort-up"></i></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box4">
+                    <div class="statement">
+                        <div class="time">
+                            <p>Marcket Cap</p>
+                        </div>
+                        <div class="trade">
+                            <p>$460.759</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--4 slot price-->
+
+            <!--graph start-->
+            <div class="graph-container" id="graph">
+                <div id="chart"></div>
+            </div>
+            <!--graph end-->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

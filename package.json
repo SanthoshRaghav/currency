@@ -1,0 +1,13 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "homepage": "https://SanthoshRaghav.github.io/currency",
+  "author": "",
+  "license": "ISC"
+}
